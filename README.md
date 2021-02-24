@@ -1,2 +1,2 @@
 # bug-trucker
-php doctrine project
+php doctrine symfony project
