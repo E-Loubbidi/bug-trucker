@@ -1,0 +1,14 @@
+<?php
+
+require_once "bootstrap.php";
+
+$id = $argv[1];
+
+$product = $entityManager->find('Product', $id);
+
+if($product == null){
+  echo "No product found.\n";
+  exit(1);
+}
+
+echo sprintf("=> %d - %s\n", $product->getId(), $product->getName());
